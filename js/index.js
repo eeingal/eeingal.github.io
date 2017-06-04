@@ -2,18 +2,6 @@ $(function(){
   new WOW().init(); 
 });
 
-// jQuery.fn.center = function () {
-//     this.css("position","absolute");
-//     this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
-//                                                 $(window).scrollLeft()) + "px");
-//     return this;
-// }
-
-// $(document).ready(function() {
-//     $('#travel-title').width($('#travel-title').width()/1.4);
-//     $('#travel-title').center();
-// });
-
 function resizeCaptions() {
     var newWidth = parseInt($(".travel-image img").css('width'));
     var newHeight = parseInt($(".travel-image img").css('height'));
@@ -21,22 +9,8 @@ function resizeCaptions() {
     $(".photo-grid figcaption p").css("font-size", newWidth/15 + newHeight/15 + "px")
 }
 
-// function resizeLines() {
-//     var windowWidth = $(window).width();
-//     var workTitlePosition = $("#work-title").position();
-//     var travelTitlePosition = $("#travel-title").position();
-
-//     console.log(travelTitlePosition.left);
-
-//     if (windowWidth > 960) {
-//         $('#travel-title span:before').css("right", "500px");
-//     }
-
-// }
-
 $(window).resize(function(){
     resizeCaptions();
-    resizeLines();
 });
 
 $(document).ready(function() {
