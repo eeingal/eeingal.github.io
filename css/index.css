@@ -1,40 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans|Oswald|Roboto+Slab|Gloria+Hallelujah');
 
-  #intro-section {
-    background-color: transparent;
-    background-image: url("../images/cover-cropped-good-small.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
-    text-align: center;
-  }
+#intro-section {
+  background-color: transparent;
+  background-image: url("../images/cover-cropped-good-small.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  height: 100vh;
+}
 
-  #intro-subtitle {
-    font-size: 250%;
-    line-height: 10%;
-    font-family: 'Gloria+Hallelujah', serif;
-  }
+#intro-subtitle {
+  font-size: 250%;
+  line-height: 10%;
+  font-family: 'Gloria+Hallelujah', serif;
+}
 
-  #intro-title {
-    font-size: 400%;
-    font-family: 'Oswald', serif;
-  }
+#intro-title {
+  font-size: 400%;
+  font-family: 'Oswald', serif;
+}
 
-  #contact-buttons {
-    text-align: center;
-  }
+#contact-buttons {
+  text-align: center;
+}
 
-  #contact-get-in-touch {
-    text-align: center;
-    font-size: 125%;
-    /*font-size: 1vw + 1vh;*/
-    color: gray;
-  }
+#contact-get-in-touch {
+  text-align: center;
+  font-size: 125%;
+  /*font-size: 1vw + 1vh;*/
+  color: gray;
+}
 
 #contact-blurb-row {
     text-align: center;
+}
+
+#contact-section {
+  height: 100vh;
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
