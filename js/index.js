@@ -90,6 +90,6 @@ $(document).ready(function() {
         });
     } else {
         $("#intro-subtitle").css("padding-top", "25vh");
-        $("#contact-blurb-text").css("padding-top", "10vh");
+        $("#contact-blurb-text").css("padding-top", "20vh");
     }
 });
