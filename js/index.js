@@ -18,9 +18,10 @@ $(window).resize(function(){
     resizeCaptions();
 });
 
-$(document).ready(function() {
-    resizeCaptions();
+$(document).ready(resizeCaptions)
+$(window).bind('page:change', resizeCaptions)
 
+$(document).ready(function() {
     if (screen.width > 768) {
         $('#fullpage').fullpage({
             //Navigation
