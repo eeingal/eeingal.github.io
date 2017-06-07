@@ -6,20 +6,12 @@ function resizeCaptions() {
     var newWidth = parseInt($(".travel-image img").css('width'));
     var newHeight = parseInt($(".travel-image img").css('height'));
     $(".photo-grid figcaption").height(newHeight + 1 + "px").width(newWidth + 1 + "px");
-    $(".photo-grid figcaption p").css("font-size", newWidth/15 + newHeight/15 + "px")
+    $(".photo-grid figcaption p").css("font-size", newWidth/15 + newHeight/15 + "px");
 }
 
-function is_touch_device() {
-  return 'ontouchstart' in window        // works on most browsers 
-      || navigator.maxTouchPoints;       // works on IE10/11 and Surface
-};
-
-$(window).resize(function(){
-    resizeCaptions();
-});
-
-$(document).ready(resizeCaptions)
-$(window).bind('page:change', resizeCaptions)
+$(window).resize(resizeCaptions);
+$(document).ready(resizeCaptions);
+$(window).bind('page:change', resizeCaptions);
 
 $(document).ready(function() {
     if (screen.width > 768) {
@@ -96,5 +88,8 @@ $(document).ready(function() {
             afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
             onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
         });
+    } else {
+        $("#intro-subtitle").css("padding-top", "25vh");
+        $("#contact-blurb-text").css("padding-top", "10vh");
     }
 });
