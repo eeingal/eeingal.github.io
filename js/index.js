@@ -21,7 +21,7 @@ $(window).resize(function(){
 $(document).ready(function() {
     resizeCaptions();
 
-    if (screen.width > 979) {
+    if (screen.width > 768) {
         $('#fullpage').fullpage({
             //Navigation
             menu: '#menu',
@@ -74,7 +74,7 @@ $(document).ready(function() {
             paddingTop: '1em',
             paddingBottom: '10px',
             fixedElements: '#header, .footer',
-            responsiveWidth: 1100,
+            responsiveWidth: 0,
             responsiveHeight: 0,
             responsiveSlides: false,
             parallax: false,

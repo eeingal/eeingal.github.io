@@ -148,7 +148,12 @@
         background-position: right;
     }
 
+    #intro-subtitle {
+        padding-top: 25vh;
+    }
+
     #contact-blurb-text {
+        padding-top: 10vh;
         font-size: 140%;
     }
 
