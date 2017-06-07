@@ -14,6 +14,8 @@ $(window).resize(function(){
 });
 
 $(document).ready(function() {
+    resizeCaptions();
+
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
@@ -87,6 +89,4 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
-
-    resizeCaptions();
 });
