@@ -6,8 +6,8 @@ function resizeCaptions() {
     var newWidth = parseInt($(".travel-image figure").css('width'));
     console.log(newWidth);
     console.log($(".photo-grid li").css('width'));
+    console.log($(".travel-image img").css('width'));
     var newHeight = parseInt($(".travel-image figure").css('height'));
-    console.log(newHeight);
     $(".photo-grid figcaption").height(newHeight + 1 + "px").width(newWidth + 1 + "px");
     $(".photo-grid figcaption p").css("font-size", newWidth/15 + newHeight/15 + "px");
 }
@@ -15,7 +15,11 @@ function resizeCaptions() {
 $(window).resize(resizeCaptions);
 
 $(document).ready(function() {
-    resizeCaptions();
+
+    setTimeout(function(){
+        resizeCaptions();
+    }, 2000);
+
     if (screen.width > 768) {
         $('#fullpage').fullpage({
             //Navigation
@@ -95,7 +99,6 @@ $(document).ready(function() {
         $("#contact-blurb-text").css("padding-top", "20vh");
         $("#travel-section").css("margin-top", "-10vh");
     }
-    resizeCaptions();
 });
 
 // $(document).ready(resizeCaptions);
