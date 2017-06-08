@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     setTimeout(function(){
         resizeCaptions();
-    }, 2000);
+    }, 500);
 
     if (screen.width > 768) {
         $('#fullpage').fullpage({
