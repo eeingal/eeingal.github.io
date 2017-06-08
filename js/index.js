@@ -13,7 +13,8 @@ function resizeCaptions() {
 $(document).ready(resizeCaptions);
 $(window).resize(resizeCaptions);
 $(window).bind('page:change', resizeCaptions);
-$(document).addEventListener("DOMContentLoaded", function() {
+
+$(".photo-grid").load(function() {
   resizeCaptions();
 });
 
