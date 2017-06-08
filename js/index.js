@@ -13,6 +13,9 @@ function resizeCaptions() {
 $(document).ready(resizeCaptions);
 $(window).resize(resizeCaptions);
 $(window).bind('page:change', resizeCaptions);
+$(document).addEventListener("DOMContentLoaded", function() {
+  resizeCaptions();
+});
 
 $(document).ready(function() {
     resizeCaptions();
