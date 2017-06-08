@@ -3,12 +3,11 @@ $(function(){
 });
 
 function resizeCaptions() {
-    var newWidth = parseInt($(".travel-image img").css('width'));
+    var newWidth = parseInt($(".travel-image figure").css('width'));
     console.log(newWidth);
-    var newHeight = parseInt($(".travel-image img").css('height'));
+    var newHeight = parseInt($(".travel-image figure").css('height'));
     console.log(newHeight);
-    $(".photo-grid figcaption").height(newHeight + 1 + "px");
-    $(".photo-grid figcaption").width(newWidth + 1 + "px");
+    $(".photo-grid figcaption").height(newHeight + 1 + "px").width(newWidth + 1 + "px");
     $(".photo-grid figcaption p").css("font-size", newWidth/15 + newHeight/15 + "px");
 }
 
@@ -93,16 +92,17 @@ $(document).ready(function() {
         $("#contact-blurb-text").css("padding-top", "20vh");
         $("#travel-section").css("margin-top", "-10vh");
     }
-});
-
-$(document).ready(resizeCaptions);
-$(window).resize(resizeCaptions);
-$(window).bind('page:change', resizeCaptions);
-
-$(".photo-grid").load(function() {
     resizeCaptions();
 });
 
-$(".travel-image img").load(function() {
-    resizeCaptions();
-});
+// $(document).ready(resizeCaptions);
+// $(window).resize(resizeCaptions);
+// $(window).bind('page:change', resizeCaptions);
+
+// $(".photo-grid").load(function() {
+//     resizeCaptions();
+// });
+
+// $(".travel-image img").load(function() {
+//     resizeCaptions();
+// });
