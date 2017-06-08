@@ -5,15 +5,17 @@ $(function(){
 function resizeCaptions() {
     var newWidth = parseInt($(".travel-image img").css('width'));
     var newHeight = parseInt($(".travel-image img").css('height'));
-    $(".photo-grid figcaption").height(newHeight + 1 + "px").width(newWidth + 1 + "px");
+    $(".photo-grid figcaption").height(newHeight + 1 + "px");
+    $(".photo-grid figcaption").width(newWidth + 1 + "px");
     $(".photo-grid figcaption p").css("font-size", newWidth/15 + newHeight/15 + "px");
 }
 
-$(window).resize(resizeCaptions);
 $(document).ready(resizeCaptions);
+$(window).resize(resizeCaptions);
 $(window).bind('page:change', resizeCaptions);
 
 $(document).ready(function() {
+    resizeCaptions();
     if (screen.width > 768) {
         $('#fullpage').fullpage({
             //Navigation
