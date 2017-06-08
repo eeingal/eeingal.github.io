@@ -10,18 +10,6 @@ function resizeCaptions() {
     $(".photo-grid figcaption p").css("font-size", newWidth/15 + newHeight/15 + "px");
 }
 
-$(document).ready(resizeCaptions);
-$(window).resize(resizeCaptions);
-$(window).bind('page:change', resizeCaptions);
-
-$(".photo-grid").load(function() {
-    resizeCaptions();
-});
-
-$(".travel-image img").load(function() {
-    resizeCaptions();
-});
-
 $(document).ready(function() {
     resizeCaptions();
     if (screen.width > 768) {
@@ -43,7 +31,7 @@ $(document).ready(function() {
             autoScrolling: true,
             fitToSection: false,
             fitToSectionDelay: 1000,
-            scrollBar: false,
+            scrollBar: true,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
             loopBottom: false,
@@ -103,4 +91,16 @@ $(document).ready(function() {
         $("#contact-blurb-text").css("padding-top", "20vh");
         $("#travel-section").css("margin-top", "-10vh");
     }
+});
+
+$(document).ready(resizeCaptions);
+$(window).resize(resizeCaptions);
+$(window).bind('page:change', resizeCaptions);
+
+$(".photo-grid").load(function() {
+    resizeCaptions();
+});
+
+$(".travel-image img").load(function() {
+    resizeCaptions();
 });
