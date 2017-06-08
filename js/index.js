@@ -15,7 +15,11 @@ $(window).resize(resizeCaptions);
 $(window).bind('page:change', resizeCaptions);
 
 $(".photo-grid").load(function() {
-  resizeCaptions();
+    resizeCaptions();
+});
+
+$(".travel-image img").load(function() {
+    resizeCaptions();
 });
 
 $(document).ready(function() {
