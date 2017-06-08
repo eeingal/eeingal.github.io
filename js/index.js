@@ -5,11 +5,14 @@ $(function(){
 function resizeCaptions() {
     var newWidth = parseInt($(".travel-image figure").css('width'));
     console.log(newWidth);
+    console.log($(".photo-grid li").css('width'));
     var newHeight = parseInt($(".travel-image figure").css('height'));
     console.log(newHeight);
     $(".photo-grid figcaption").height(newHeight + 1 + "px").width(newWidth + 1 + "px");
     $(".photo-grid figcaption p").css("font-size", newWidth/15 + newHeight/15 + "px");
 }
+
+$(window).resize(resizeCaptions);
 
 $(document).ready(function() {
     resizeCaptions();
@@ -96,7 +99,6 @@ $(document).ready(function() {
 });
 
 // $(document).ready(resizeCaptions);
-// $(window).resize(resizeCaptions);
 // $(window).bind('page:change', resizeCaptions);
 
 // $(".photo-grid").load(function() {
