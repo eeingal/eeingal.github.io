@@ -98,9 +98,9 @@ $(document).ready(function() {
         $("#intro-subtitle").css("padding-top", "25vh");
         $("#contact-blurb-text").css("padding-top", "20vh");
         $("#travel-section").css("margin-top", "-10vh");
-        $(".photo-grid li figcaption").click(function () {
+        $(".photo-grid li").click(function () {
             $(".photo-grid li figcaption").css("opacity", "0");
-            $(this).css("opacity", "1");
+            $(this).find("figcaption").css("opacity", "1");
         });
     }
 });
