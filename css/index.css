@@ -125,7 +125,7 @@
     vertical-align: middle;
 }
 
-.photo-grid li:hover li:active figcaption {
+.photo-grid li:hover figcaption {
     opacity: 1;
 }
 
