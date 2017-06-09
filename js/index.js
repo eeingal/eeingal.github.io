@@ -100,7 +100,9 @@ $(document).ready(function() {
         $("#travel-section").css("margin-top", "-10vh");
         $(".photo-grid li").click(function () {
             $(".photo-grid li figcaption").css("opacity", "0");
-            $(this).find("figcaption").css("opacity", "1");
+            setTimeout(function(){
+                $(this).find("figcaption").css("opacity", "1");
+            }, 100);
         });
     }
 });
