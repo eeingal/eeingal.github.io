@@ -98,17 +98,6 @@ $(document).ready(function() {
         $("#intro-subtitle").css("padding-top", "25vh");
         $("#contact-blurb-text").css("padding-top", "20vh");
         $("#travel-section").css("margin-top", "-10vh");
-
-        // var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
-        // if (isSafari) {
-        //     $(".photo-grid li").click(function () {
-        //         $(".photo-grid li figcaption").css("opacity", "0");
-        //         setTimeout(function(){
-        //             $(this).find("figcaption").css("opacity", "1");
-        //         }, 200);
-        //     });
-        // }
-
     }
 });
 
