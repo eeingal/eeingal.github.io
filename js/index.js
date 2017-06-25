@@ -100,14 +100,3 @@ $(document).ready(function() {
         $("#travel-section").css("margin-top", "-10vh");
     }
 });
-
-// $(document).ready(resizeCaptions);
-// $(window).bind('page:change', resizeCaptions);
-
-// $(".photo-grid").load(function() {
-//     resizeCaptions();
-// });
-
-// $(".travel-image img").load(function() {
-//     resizeCaptions();
-// });
